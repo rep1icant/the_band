@@ -1,14 +1,14 @@
 
 
-
-.container {
-  display: flex;
-  .item {
-    border: 1px solid grey;
-    margin: 25px;
-    padding: 15px;
-  }
-}
-
 //Bring in bootstrap
-@import "vendor/bootstrap";
+@import 'vendor/bootstrap';
+@import 'abstracts/variables';
+
+
+@import 'base/typography';
+
+@import 'components/navigation';
+@import 'components/parallax';
+@import 'components/footer';
+
+@import 'pages/home';

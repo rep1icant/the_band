@@ -122,6 +122,7 @@
 // or image file as needed.
 .navbar-toggler-icon {
   display: inline-block;
+  float: right;
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
@@ -143,6 +144,7 @@
         > .container-fluid {
           padding-right: 0;
           padding-left: 0;
+
         }
       }
 
