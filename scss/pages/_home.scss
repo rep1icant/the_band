@@ -4,9 +4,14 @@
   background-position: bottom center;
   padding-top: 20vh;
   padding-bottom: 25vh;
+  margin-top: -10vh;
 }
 .hero .btn-primary {
   padding: 0.7em 2em;
+}
+
+.about {
+  background: $black;
 }
 .about-title {
   background: url(../img/about-bg.jpg);
@@ -30,6 +35,7 @@
 .band-member {
   margin-bottom: 1.5em;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
+  background: $black;
   @include media-breakpoint-up(md) {
     position: absolute;
     top: -3em;
@@ -45,4 +51,68 @@
 }
 .band-member-position {
   color: $gray-400;
+}
+
+.music {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.music-container {
+  background: $black;
+  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
+.music-title {
+  margin-bottom: 0.5em;
+}
+
+.music-cta {
+  margin-top: 2em;
+}
+
+.shows {
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+.show-title {
+  font-family: $sans;
+}
+
+.show-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-info > * {
+  margin-bottom: 0;
+}
+
+.date {
+  font-weight: $bold;
+  margin-top: 1.25em;
+
+  &::before {
+    content: '\f073';
+    display: inline-block;
+    font-family: fontAwesome;
+    margin-right: 0.5em;
+  }
+}
+
+.price {
+  font-weight: $bold;
+
+  small {
+    font-weight: $normal;
+  }
+  &::before {
+    content: '\f145';
+    display: inline-block;
+    font-family: fontAwesome;
+    margin-right: 0.5em;
+  }
 }
